@@ -1,0 +1,12 @@
+<h1 class="h1">Helloword</h1>
+<h4>My name is {{name}}</h4>
+<h2>Tuổi mình : {{age}}</h2>
+<span *ngIf =  "age < 18 " class="underAge" >Bạn dưới 18</span>
+<span *ngIf = " age >= 18 " class="overAge">Bạn trên 18</span>
+<br>
+<input [(ngModel)]="name"/>
+<div *ngFor="let item of listName">
+    <li>{{item}}</li>
+</div>
+<br><br>
+<button (click)="tangtuoi()">Tangtuoi</button>
